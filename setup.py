@@ -3,7 +3,7 @@ from distutils.core import setup
 # Dynamically calculate the version
 version_tuple = __import__('addressbook').VERSION
 if version_tuple[2] is not None:
-    version = "%d.%d_%s" % version_tuple
+    version = "%d.%d.%s" % version_tuple
 else:
     version = "%d.%d" % version_tuple[:2]
 
